@@ -33,6 +33,8 @@ The goal of this project is to convert CSV files stored in the **landing** zone 
 
 This architecture is represented schematically as follows:
 
+<pre> ```text
+    
 ┌────────────────────────────────────────────────────────────────┐
 │                       📤 User / System                         │
 │     Upload CSV to S3: landing-bucket/{db}/{table}/file.csv     │
@@ -65,6 +67,7 @@ This architecture is represented schematically as follows:
  │  by db/table)             │     │   and Glue jobs)            │
  └───────────────────────────┘     └─────────────────────────────┘
 
+``` </pre>
 
 - **Input**: CSV files uploaded to S3 under the structure `landing-bucket/{db_name}/{table_name}/file.csv`
 - **Output**: Parquet files written to `s3://clean-bucket/{db_name}/{table_name}/`
