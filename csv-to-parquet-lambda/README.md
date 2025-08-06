@@ -33,7 +33,7 @@ The goal of this project is to convert CSV files stored in the **landing** zone 
 
 This architecture is represented schematically as follows:
 
-<pre> ```text
+<pre> ```
     
 ┌────────────────────────────────────────────────────────────────┐
 │                       📤 User / System                         │
